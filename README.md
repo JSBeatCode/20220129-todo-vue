@@ -22,3 +22,10 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 추가-설치
+npm install -g @vue/cli @vue/cli-service-global
+vue.cmd create 프로젝트명
+
+### 추가-실행
+npm run serve
