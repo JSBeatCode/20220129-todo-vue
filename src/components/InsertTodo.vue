@@ -9,17 +9,6 @@
             className="form-control" 
             type="text" 
         />
-        <!-- <input
-            @keyup.enter="funcChange, funcJustConsole"
-            v-model="state.todo"
-            className="form-control" 
-            type = "text" 
-        /> -->
-        <!-- <input 
-            @click = "$emit('funcSubmit')"
-            className = "btn btn-primary" 
-            type = "button" 
-            value = "submit"/> -->
         <input 
             @click="funcChange"
             className="btn btn-primary" 

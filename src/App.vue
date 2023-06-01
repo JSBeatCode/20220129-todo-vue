@@ -30,14 +30,10 @@ export default {
   },
   setup(){
     const state = reactive({
-      // todo : '',
       todoList : [],
-      // homePage : computed(()=>this.$route.path==='/'?true:false)
     });
     
     const funcSubmit = (val) => {
-      console.log('debug3', val)
-
       state.todoList = [
         ...state.todoList,
         {id:uuidv4(), content:val}
