@@ -3,24 +3,13 @@
     <HelloWorld 
       msg="TodoList"
     />
-    <!-- <InsertTodo 
-      @funcChange = "funcChange"
-      @funcSubmit = "funcSubmit"
-      @funcKeyDown = "funcKeyDown"
-      :todo="state.todo"
-    /> -->
-    <!-- <InsertTodo 
-      @funcSubmit = "funcSubmit"
-      @funcKeyDown = "funcKeyDown"
-      :todo="state.todo"
-    /> -->
     <InsertTodo 
-      @funcSubmit = "funcSubmit"
+      @funcSubmit="funcSubmit"
       :todo="state.todo"
     />
     <ListTodo 
-      :todoList = state.todoList
-      @funcDel = "funcDel"
+      :todoList=state.todoList
+      @funcDel="funcDel"
     />
   </div>
 </template>
@@ -53,17 +42,7 @@ export default {
         ...state.todoList,
         {id:uuidv4(), content:val}
       ];
-      // console.log(state.todoList);
-      // state.todo = '';
-      // console.log("funcSubmit", state.todoList)
-      // if(key===13){
-      //   state.todo = '';
-      // }
     }
-    // const funcChange = (val) => {
-    //   state.todo = val;
-    //   // console.log("funcChange", state.todo)
-    // }
 
     const funcKeyDown = () => {
       funcSubmit();
@@ -74,11 +53,11 @@ export default {
     }
 
     onUpdated(()=>{
-      // console.log("updated", state)
+      // console.log("state의 변화가 있을 때마다 updated", state)
     })
 
     onMounted(()=>{
-      // console.log("mounted", state)
+      // console.log("페이지 새로 시작할때마다 mounted", state)
     })
 
     return {

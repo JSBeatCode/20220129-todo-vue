@@ -7,7 +7,7 @@
             @keyup.enter="funcChange"
             v-model="state.todo"
             className="form-control" 
-            type = "text" 
+            type="text" 
         />
         <!-- <input
             @keyup.enter="funcChange, funcJustConsole"
@@ -21,10 +21,10 @@
             type = "button" 
             value = "submit"/> -->
         <input 
-            @click = "funcChange"
-            className = "btn btn-primary" 
-            type = "button" 
-            value = "submit"/>
+            @click="funcChange"
+            className="btn btn-primary" 
+            type="button" 
+            value="submit"/>
         </div>
     </div>
     </div>

@@ -1,9 +1,9 @@
 <template>
-  <div className = "row">
-    <div className = "col">
-        <div className = "card" v-for="todo in todoList" v-bind:key="todo.id">
-            <div className = "card-body" 
-                @click = "$emit('funcDel', todo.id)"
+  <div className="row">
+    <div className="col">
+        <div className="card" v-for="todo in todoList" v-bind:key="todo.id">
+            <div className="card-body" 
+                @click="$emit('funcDel', todo.id)"
             >
             {{todo.content}}
             </div>
